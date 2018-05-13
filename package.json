@@ -27,7 +27,7 @@
     "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
     "setup": "npm install",
     "dev": "micro-dev -H localhost",
-    "start": "micro",
+    "start": "micro -p 3001",
     "now-deploy": "npm test && now --npm && now alias"
   },
   "keywords": [
@@ -46,11 +46,11 @@
     "ava": "0.22.0",
     "axios": "0.16.2",
     "coveralls": "2.13.1",
+    "micro-dev": "^1.2.2",
     "nsp": "2.8.0",
     "nyc": "11.2.1",
     "standard": "10.0.3",
-    "test-listen": "1.0.2",
-    "micro-dev": "1.2.2"
+    "test-listen": "1.0.2"
   },
   "dependencies": {
     "marked": "0.3.6",

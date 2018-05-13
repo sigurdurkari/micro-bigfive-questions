@@ -11,8 +11,10 @@ module.exports = async (req, res) => {
   let result = {}
   if (pathname === '/questions') {
     const opts = {
-      lang: data.lang || 'en',
-      testType: data.testType || '120'
+      lang: data.lang || 'is',
+      testType: data.testType || '50',
+      page: data.page || 1,
+      limit: data.limit || 5
     }
     result = getQuestions(opts)
   } else if (pathname === '/tests') {
